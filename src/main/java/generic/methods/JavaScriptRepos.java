@@ -16,11 +16,12 @@ public class JavaScriptRepos {
 		js = (JavascriptExecutor) driver;
 	}
 
-	public WebElement scroll2view(String locator, String winsize) {
+	public WebElement scroll2view(String locator, String winSize) {
 		
-		js.executeScript(winsize);
+		js.executeScript(winSize);
 		// Explicit wait
-		WebDriverWait wait = new WebDriverWait(driver, 3);
+
+		WebDriverWait wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
 		return null;
 		}

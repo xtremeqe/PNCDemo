@@ -40,7 +40,10 @@ Feature: Testing the features on Personal Home page
     And PHTb the Compare Our Credit Cards link is present
     When PHTb the user click on Compare Credit Cards
     Then PHTb lands on Compare Credit Cards page
-    And PHTb Apply options are present
+    And PHTb Apply for Get Cash Back card is present
+    And PHTb Apply for SAVE WITH LOWER RATES card is present
+    And PHTb Apply for EARN POINTS FOR REWARDS card is present
+    And PHTb Apply for EARN MILES, PERKS, REWARDS card is present
 
   @tag3
   Scenario: Testing Savings link

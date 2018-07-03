@@ -24,9 +24,7 @@ Feature: Testing the features on Personal Banking page
   Scenario: Testing Checking link through the drop down
     Given PBTa The user is on personal home page
     And PBTa BANKING is present on the menu
-    When PBTa cursor is placed on the BANKING menu
-    Then PBTa the drop down appear with chcking link
-    When PBTa the user click on Checking link
+    When PBTa cursor is placed on the BANKING menu and click on Checking link
     Then PBTa the user lands on Personal Checking Accounts page
     And PBTa Find the Right Checking Account button is present
     When PBTa the user click on Find Right Checking Account button
@@ -37,9 +35,7 @@ Feature: Testing the features on Personal Banking page
   Scenario: Testing Savings link through the drop down
     Given PBTb The user is on personal home page
     And PBTb BANKING is present on the menu
-    When PBTb cursor is placed on the BANKING menu
-    Then PBTb the drop down appear with Savings link
-    When PBTb the user click on Savings link
+    When PBTb cursor is placed on the BANKING menu and click on Savings link
     Then PBTb the user lands on PNC savings page
     And PBTb Find the right savings account is present
 
@@ -47,9 +43,7 @@ Feature: Testing the features on Personal Banking page
   Scenario: Testing Credit Card link through the drop down
     Given PBTc The user is on personal home page
     And PBTc BANKING is present on the menu
-    When PBTc cursor is placed on the BANKING menu
-    Then PBTc the drop down appear with crdit cards link
-    When PBTc the user click on Savings link
+    When PBTc cursor is placed on the BANKING menu and click on on Credit Card link
     Then PBTc the user lands on Personal Credit Cards
     And PBTc the Compare Our Credit Cards link is present
     When PBTc the user click on Compare Credit Cards

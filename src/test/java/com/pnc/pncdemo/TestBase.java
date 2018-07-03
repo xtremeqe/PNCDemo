@@ -1,33 +1,48 @@
 package com.pnc.pncdemo;
 
+import static org.junit.Assert.*;
+
 import java.util.concurrent.TimeUnit;
 
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+
+import generic.methods.GenericMethods;
+import generic.methods.JavaScriptRepos;
+import page.classes.PersonHomeRepos;
 
 public class TestBase {
-	protected WebDriver driver;
-	protected String baseURL;
+	public WebDriver driver;
+	public String baseURL;
+	public PersonHomeRepos personHome;
+	public JavaScriptRepos javaRepos;
+	public GenericMethods gm;
 
-	@BeforeMethod
-	public void beforeMethod() {
+	@BeforeClass
+	public void setUpBeforeClass() throws Exception {
+		
 		driver = new ChromeDriver();
 		baseURL = "https://www.pnc.com";
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		personHome = new PersonHomeRepos(driver);
+		javaRepos = new JavaScriptRepos(driver);
+		gm = new GenericMethods(driver);
+		
+	}
+
+	@AfterClass
+	public void tearDownAfterClass() throws Exception {
+		driver.quit();
+		
 	}
 
 	@Test
-	public void testBase() {
-//		driver.get(baseURL);
-	}
-
-	@AfterMethod
-	public void afterMethod() {
-		driver.quit();
+	public void test() {
+//		fail("Not yet implemented");
 	}
 
 }
