@@ -1,12 +1,20 @@
 package stepdefinition;
 
-import com.pnc.pncdemo.TestBase;
+import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import generic.methods.GenericMethods;
+import generic.methods.JavaScriptRepos;
+import page.classes.PersonHomeRepos;
+import tests.TestRun;
 
-public class PersonHome extends TestBase{
+public class PersonHome extends TestRun {
 	
 	@Given("PHTa The user is on personal home page")
 	public void phta_The_user_is_on_personal_home_page() throws Exception {
@@ -16,7 +24,7 @@ public class PersonHome extends TestBase{
 
 	@Given("PHTa checking link is present")
 	public void phta_checking_link_is_present() throws Exception {
-//		scrolling the window to get the element
+		// scrolling the window to get the element
 		javaRepos.scroll2view("//p[text()='Checking']", "window.scrollBy(0, 700);");
 		boolean result = gm.isElementPresent("//p[text()='Checking']", "xpath");
 		System.out.println("Is Checking link present? " + result);
@@ -25,8 +33,7 @@ public class PersonHome extends TestBase{
 	@When("PHTa click on Checking link")
 	public void phta_click_on_Checking_link() {
 		personHome.clickChecking();
-		
-		
+
 	}
 
 	@Then("PHTa the user lands on Personal Checking Accounts page")
@@ -57,8 +64,12 @@ public class PersonHome extends TestBase{
 
 	@Then("PHTa First question is visible")
 	public void phta_First_question_is_visible() {
-		gm.waitVisiCondition("//div[text()='Do you want to pay bills and manage your money online or with your mobile phone?']", "xpath");
-		boolean result = gm.isElementPresent("//div[text()='Do you want to pay bills and manage your money online or with your mobile phone?']", "xpath");
+		gm.waitVisiCondition(
+				"//div[text()='Do you want to pay bills and manage your money online or with your mobile phone?']",
+				"xpath");
+		boolean result = gm.isElementPresent(
+				"//div[text()='Do you want to pay bills and manage your money online or with your mobile phone?']",
+				"xpath");
 		System.out.println("Is the first question visible? " + result);
 	}
 
@@ -112,31 +123,30 @@ public class PersonHome extends TestBase{
 	public void phtb_Apply_for_Get_Cash_Back_card_is_present() {
 		boolean result = gm.isElementPresent("//p[text()='SAVE WITH LOWER RATES']", "xpath");
 		System.out.println("Is Apply for SAVE WITH LOWER RATES card option present? " + result);
-	    
+
 	}
 
 	@Then("PHTb Apply for SAVE WITH LOWER RATES card is present")
 	public void phtb_Apply_for_SAVE_WITH_LOWER_RATES_card_is_present() {
 		boolean result = gm.isElementPresent("//p[text()='EARN POINTS FOR REWARDS']", "xpath");
 		System.out.println("Is Apply for EARN POINTS FOR REWARDS card option present? " + result);
-	   
+
 	}
 
 	@Then("PHTb Apply for EARN POINTS FOR REWARDS card is present")
 	public void phtb_Apply_for_EARN_POINTS_FOR_REWARDS_card_is_present() {
 		boolean result = gm.isElementPresent("//p[text()='EARN POINTS FOR REWARDS']", "xpath");
 		System.out.println("Is Apply for EARN POINTS FOR REWARDS card option present? " + result);
-	    
+
 	}
 
 	@Then("PHTb Apply for EARN MILES, PERKS, REWARDS card is present")
 	public void phtb_Apply_for_EARN_MILES_PERKS_REWARDS_card_is_present() {
 		boolean result = gm.isElementPresent("//p[text()='EARN MILES, PERKS, REWARDS']", "xpath");
 		System.out.println("Is Apply for EARN MILES, PERKS, REWARDS card option present? " + result);
-	    
+
 	}
-	
-	
+
 	@Given("PHTc The user is on personal home page")
 	public void phtc_The_user_is_on_personal_home_page() {
 		driver.get(baseURL);
@@ -148,7 +158,7 @@ public class PersonHome extends TestBase{
 		gm.waitVisiCondition("//p[text()='Savings']", "xpath");
 		boolean result = gm.isElementPresent("//p[text()='Savings']", "xpath");
 		System.out.println("Is Saving link present? " + result);
-	    
+
 	}
 
 	@When("PHTc the user click on Savings link")
@@ -167,10 +177,7 @@ public class PersonHome extends TestBase{
 	public void phtc_Find_the_right_savings_account_is_present() {
 		boolean result = gm.isElementPresent("//a[text()='Find the Right Savings Account']", "xpath");
 		System.out.println("Is Find the right savings account present? " + result);
-		
 
 	}
-	
-	
 
 }

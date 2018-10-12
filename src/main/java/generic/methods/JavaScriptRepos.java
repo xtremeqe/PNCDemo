@@ -10,26 +10,18 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class JavaScriptRepos {
 	WebDriver driver;
 	private JavascriptExecutor js;
-	
+
 	public JavaScriptRepos(WebDriver driver) {
 		this.driver = driver;
 		js = (JavascriptExecutor) driver;
 	}
 
 	public WebElement scroll2view(String locator, String winSize) {
-		
 		js.executeScript(winSize);
-		// Explicit wait
 
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
 		return null;
-		}
-		
-	
+	}
+
 }
-
-
-//public WebDriver getDriver() {
-//	return driver;
-//}

@@ -1,35 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="5" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="0.032631">
-<testcase classname="Testing the features on Personal Banking page" name="Testing Checking link through the drop down" time="0.014598">
-<failure message="java.lang.NullPointerException&#13;&#10;&#9;at stepdefinition.PersonBank.pbta_The_user_is_on_personal_home_page(PersonBank.java:13)&#13;&#10;&#9;at ✽.PBTa The user is on personal home page(src/test/java/feature/personalBanking.feature:25)&#13;&#10;"><![CDATA[Given PBTa The user is on personal home page................................failed
-And PBTa BANKING is present on the menu.....................................skipped
-When PBTa cursor is placed on the BANKING menu and click on Checking link...skipped
-Then PBTa the user lands on Personal Checking Accounts page.................skipped
-And PBTa Find the Right Checking Account button is present..................skipped
-When PBTa the user click on Find Right Checking Account button..............skipped
-Then PBTa the user lands on questionnaire page..............................skipped
-And PBTa First question is visible..........................................skipped
-
-StackTrace:
-java.lang.NullPointerException
-	at stepdefinition.PersonBank.pbta_The_user_is_on_personal_home_page(PersonBank.java:13)
-	at ✽.PBTa The user is on personal home page(src/test/java/feature/personalBanking.feature:25)
-]]></failure>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="98.815161">
+<testcase classname="Testing the features on Personal Banking page" name="Testing Checking link through the drop down" time="47.980309">
+<system-out><![CDATA[Given PBTa The user is on personal home page................................passed
+And PBTa BANKING is present on the menu.....................................passed
+When PBTa cursor is placed on the BANKING menu and click on Checking link...passed
+Then PBTa the user lands on Personal Checking Accounts page.................passed
+And PBTa Find the Right Checking Account button is present..................passed
+When PBTa the user click on Find Right Checking Account button..............passed
+Then PBTa the user lands on questionnaire page..............................passed
+And PBTa First question is visible..........................................passed
+]]></system-out>
 </testcase>
-<testcase classname="Testing the features on Personal Banking page" name="Testing Savings link through the drop down" time="0.001442">
-<failure message="java.lang.NullPointerException&#13;&#10;&#9;at stepdefinition.PersonBank.pbtb_The_user_is_on_personal_home_page(PersonBank.java:69)&#13;&#10;&#9;at ✽.PBTb The user is on personal home page(src/test/java/feature/personalBanking.feature:36)&#13;&#10;"><![CDATA[Given PBTb The user is on personal home page................................failed
-And PBTb BANKING is present on the menu.....................................skipped
-When PBTb cursor is placed on the BANKING menu and click on Savings link....skipped
-Then PBTb the user lands on PNC savings page................................skipped
-And PBTb Find the right savings account is present..........................skipped
-
-StackTrace:
-java.lang.NullPointerException
-	at stepdefinition.PersonBank.pbtb_The_user_is_on_personal_home_page(PersonBank.java:69)
-	at ✽.PBTb The user is on personal home page(src/test/java/feature/personalBanking.feature:36)
-]]></failure>
+<testcase classname="Testing the features on Personal Banking page" name="Testing Savings link through the drop down" time="5.898596">
+<system-out><![CDATA[Given PBTb The user is on personal home page................................passed
+And PBTb BANKING is present on the menu.....................................passed
+When PBTb cursor is placed on the BANKING menu and click on Savings link....passed
+Then PBTb the user lands on PNC savings page................................passed
+And PBTb Find the right savings account is present..........................passed
+]]></system-out>
 </testcase>
-<testcase classname="Testing the features on Personal Banking page" name="Testing Credit Card link through the drop down" time="0.005447">
+<testcase classname="Testing the features on Personal Banking page" name="Testing Credit Card link through the drop down" time="16.425335">
 <system-out><![CDATA[Given PBTc The user is on personal home page................................passed
 And PBTc BANKING is present on the menu.....................................passed
 When PBTc cursor is placed on the BANKING menu and click on on Credit Card link.passed
@@ -37,55 +27,43 @@ Then PBTc the user lands on Personal Credit Cards...........................pass
 And PBTc the Compare Our Credit Cards link is present.......................passed
 When PBTc the user click on Compare Credit Cards............................passed
 Then PBTc lands on Compare Credit Cards page................................passed
-And PBTc Apply options are present..........................................passed
+And PHTc Apply for Get Cash Back card is present............................passed
+And PHTc Apply for SAVE WITH LOWER RATES card is present....................passed
+And PHTc Apply for EARN POINTS FOR REWARDS card is present..................passed
+And PHTc Apply for EARN MILES, PERKS, REWARDS card is present...............passed
 ]]></system-out>
 </testcase>
-<testcase classname="Testing the features on Personal Home page" name="Testing Checking link" time="0.007754">
-<failure message="java.lang.NullPointerException&#13;&#10;&#9;at stepdefinition.PersonHome.phta_The_user_is_on_personal_home_page(PersonHome.java:13)&#13;&#10;&#9;at ✽.PHTa The user is on personal home page(src/test/java/feature/personalHome.feature:25)&#13;&#10;"><![CDATA[Given PHTa The user is on personal home page................................failed
-And PHTa checking link is present...........................................skipped
-When PHTa click on Checking link............................................skipped
-Then PHTa the user lands on Personal Checking Accounts page.................skipped
-And PHTa Find the Right Checking Account button is present..................skipped
-When PHTa the user click on Right Checking Account button...................skipped
-Then PHTa the user lands on questionnaire page..............................skipped
-And PHTa First question is visible..........................................skipped
-
-StackTrace:
-java.lang.NullPointerException
-	at stepdefinition.PersonHome.phta_The_user_is_on_personal_home_page(PersonHome.java:13)
-	at ✽.PHTa The user is on personal home page(src/test/java/feature/personalHome.feature:25)
-]]></failure>
+<testcase classname="Testing the features on Personal Home page" name="Testing Checking link" time="5.090558">
+<system-out><![CDATA[Given PHTa The user is on personal home page................................passed
+And PHTa checking link is present...........................................passed
+When PHTa click on Checking link............................................passed
+Then PHTa the user lands on Personal Checking Accounts page.................passed
+And PHTa Find the Right Checking Account button is present..................passed
+When PHTa the user click on Right Checking Account button...................passed
+Then PHTa the user lands on questionnaire page..............................passed
+And PHTa First question is visible..........................................passed
+]]></system-out>
 </testcase>
-<testcase classname="Testing the features on Personal Home page" name="Testing Credit Cards link" time="0.002323">
-<failure message="java.lang.NullPointerException&#13;&#10;&#9;at stepdefinition.PersonHome.phtb_The_user_is_on_personal_home_page(PersonHome.java:67)&#13;&#10;&#9;at ✽.PHTb The user is on personal home page(src/test/java/feature/personalHome.feature:36)&#13;&#10;"><![CDATA[Given PHTb The user is on personal home page................................failed
-And PHTb credit cards link is present.......................................skipped
-When PHTb the user click on crdit cards link................................skipped
-Then PHTb the user lands on Personal Credit Cards...........................skipped
-And PHTb the Compare Our Credit Cards link is present.......................skipped
-When PHTb the user click on Compare Credit Cards............................skipped
-Then PHTb lands on Compare Credit Cards page................................skipped
-And PHTb Apply for Get Cash Back card is present............................skipped
-And PHTb Apply for SAVE WITH LOWER RATES card is present....................skipped
-And PHTb Apply for EARN POINTS FOR REWARDS card is present..................skipped
-And PHTb Apply for EARN MILES, PERKS, REWARDS card is present...............skipped
-
-StackTrace:
-java.lang.NullPointerException
-	at stepdefinition.PersonHome.phtb_The_user_is_on_personal_home_page(PersonHome.java:67)
-	at ✽.PHTb The user is on personal home page(src/test/java/feature/personalHome.feature:36)
-]]></failure>
+<testcase classname="Testing the features on Personal Home page" name="Testing Credit Cards link" time="5.908952">
+<system-out><![CDATA[Given PHTb The user is on personal home page................................passed
+And PHTb credit cards link is present.......................................passed
+When PHTb the user click on crdit cards link................................passed
+Then PHTb the user lands on Personal Credit Cards...........................passed
+And PHTb the Compare Our Credit Cards link is present.......................passed
+When PHTb the user click on Compare Credit Cards............................passed
+Then PHTb lands on Compare Credit Cards page................................passed
+And PHTb Apply for Get Cash Back card is present............................passed
+And PHTb Apply for SAVE WITH LOWER RATES card is present....................passed
+And PHTb Apply for EARN POINTS FOR REWARDS card is present..................passed
+And PHTb Apply for EARN MILES, PERKS, REWARDS card is present...............passed
+]]></system-out>
 </testcase>
-<testcase classname="Testing the features on Personal Home page" name="Testing Savings link" time="0.001067">
-<failure message="java.lang.NullPointerException&#13;&#10;&#9;at stepdefinition.PersonHome.phtc_The_user_is_on_personal_home_page(PersonHome.java:142)&#13;&#10;&#9;at ✽.PHTc The user is on personal home page(src/test/java/feature/personalHome.feature:50)&#13;&#10;"><![CDATA[Given PHTc The user is on personal home page................................failed
-And PHTc Saving link is present.............................................skipped
-When PHTc the user click on Savings link....................................skipped
-Then PHTc the user lands on PNC savings page................................skipped
-And PHTc Find the right savings account is present..........................skipped
-
-StackTrace:
-java.lang.NullPointerException
-	at stepdefinition.PersonHome.phtc_The_user_is_on_personal_home_page(PersonHome.java:142)
-	at ✽.PHTc The user is on personal home page(src/test/java/feature/personalHome.feature:50)
-]]></failure>
+<testcase classname="Testing the features on Personal Home page" name="Testing Savings link" time="17.511411">
+<system-out><![CDATA[Given PHTc The user is on personal home page................................passed
+And PHTc Saving link is present.............................................passed
+When PHTc the user click on Savings link....................................passed
+Then PHTc the user lands on PNC savings page................................passed
+And PHTc Find the right savings account is present..........................passed
+]]></system-out>
 </testcase>
 </testsuite>

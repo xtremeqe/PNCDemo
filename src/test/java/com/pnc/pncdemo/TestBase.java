@@ -23,7 +23,7 @@ public class TestBase {
 
 	@BeforeClass
 	public void setUpBeforeClass() throws Exception {
-		
+
 		driver = new ChromeDriver();
 		baseURL = "https://www.pnc.com";
 		driver.manage().window().maximize();
@@ -31,18 +31,18 @@ public class TestBase {
 		personHome = new PersonHomeRepos(driver);
 		javaRepos = new JavaScriptRepos(driver);
 		gm = new GenericMethods(driver);
-		
+
 	}
 
 	@AfterClass
 	public void tearDownAfterClass() throws Exception {
 		driver.quit();
-		
+
 	}
 
 	@Test
 	public void test() {
-//		fail("Not yet implemented");
+		// fail("Not yet implemented");
 	}
 
 }

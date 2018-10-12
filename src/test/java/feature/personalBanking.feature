@@ -48,7 +48,10 @@ Feature: Testing the features on Personal Banking page
     And PBTc the Compare Our Credit Cards link is present
     When PBTc the user click on Compare Credit Cards
     Then PBTc lands on Compare Credit Cards page
-    And PBTc Apply options are present
+     And PHTc Apply for Get Cash Back card is present
+    And PHTc Apply for SAVE WITH LOWER RATES card is present
+    And PHTc Apply for EARN POINTS FOR REWARDS card is present
+    And PHTc Apply for EARN MILES, PERKS, REWARDS card is present
     
   #@tag2
   #Scenario Outline: Title of your scenario outline

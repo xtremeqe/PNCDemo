@@ -1,40 +1,26 @@
 package generic.methods;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.interactions.Actions;
 
 public class GenericMethods {
 	WebDriver driver;
-	private String baseURL;
 
-	// Refer constructor's lectures in java concept
 	public GenericMethods(WebDriver driver) {
 		this.driver = driver;
 	}
 
-	public void getURL() {
-		driver = new ChromeDriver();
-		baseURL = "https://www.pnc.com";
-		driver.get(baseURL);
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-	}
-
+	// locate element to execute action
 	public WebElement getElement(String locator, String type) {
 		type = type.toLowerCase();
 		if (type.equals("id")) {
@@ -98,6 +84,7 @@ public class GenericMethods {
 		return elementList;
 	}
 
+	// Element present true false
 	public boolean isElementPresent(String locator, String type) {
 		List<WebElement> elementList = getElementList(locator, type);
 
@@ -131,6 +118,7 @@ public class GenericMethods {
 		return null;
 	}
 
+	// Conditional wait
 	public WebElement waitVisiCondition(String locator, String type) {
 		type = type.toLowerCase();
 		WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -172,6 +160,7 @@ public class GenericMethods {
 		}
 	}
 
+	// Select Element from dropdown
 	public WebElement dropDownElement(String locator, String type, String value) {
 		type = type.toLowerCase();
 
@@ -208,49 +197,69 @@ public class GenericMethods {
 			return this.driver.findElement(By.partialLinkText(locator));
 		} else {
 			System.out.println("Locator type not supported");
-			return null;
+			// return null;
 		}
 		return null;
 	}
 
+	// Mouse Hover
 	public WebElement hoverMenuNClick(String type, String mainLocator, String subLocator) throws InterruptedException {
 		type = type.toLowerCase();
+		Actions action = new Actions(driver);
+
 		if (type.equals("id")) {
 			WebElement mainElement = driver.findElement(By.id(mainLocator));
-			Actions action = new Actions(driver);
 			action.moveToElement(mainElement).perform();
 			Thread.sleep(2000);
 			WebElement subElement = driver.findElement(By.id(subLocator));
 			subElement.click();
-			return null;
 		} else if (type.equals("xpath")) {
 			WebElement mainElement = driver.findElement(By.xpath(mainLocator));
-			Actions action = new Actions(driver);
 			action.moveToElement(mainElement).perform();
 			Thread.sleep(2000);
 			WebElement subElement = driver.findElement(By.xpath(subLocator));
 			subElement.click();
-			return null;
+		} else if (type.equals("css")) {
+			WebElement mainElement = driver.findElement(By.cssSelector(mainLocator));
+			action.moveToElement(mainElement).perform();
+			Thread.sleep(2000);
+			WebElement subElement = driver.findElement(By.cssSelector(subLocator));
+			subElement.click();
 		}
 		return null;
 	}
 
-	// Correct this code to capture screenshots
+	// Drag and Drop
+	public WebElement dragNDrop(String type, String draggable, String droppable) throws InterruptedException {
+		type = type.toLowerCase();
+		Actions action = new Actions(driver);
+		if (type.equals("id")) {
+			WebElement fromElement = driver.findElement(By.id(draggable));
+			WebElement toElement = driver.findElement(By.id(droppable));
+			// Drag and drop
+			action.dragAndDrop(fromElement, toElement).build().perform();
+			// Click and hold, move to element, release, build and perform
+			// action.clickAndHold(fromElement).moveToElement(toElement).release().build().perform();
+		} else if (type.equals("xpath")) {
+			WebElement fromElement = driver.findElement(By.xpath(draggable));
+			WebElement toElement = driver.findElement(By.xpath(droppable));
+			// Drag and drop
+			action.dragAndDrop(fromElement, toElement).build().perform();
+		}
+		return null;
+	}
 
-	// String fileName = getRandomString(10) + ".png";
-	// String directory = "//Path//to Directory//";
-	//
-	// File sourceFile =
-	// ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	// FileUtils.copyFile(sourceFile, new File(directory + fileName));
-	//
-
-	// Find Size of window
-	/*
-	 * long height = (Long) js.executeScript("return window.innerHeight;"); long
-	 * width = (Long) js.executeScript("return window.innerWidth;");
-	 * 
-	 * System.out.println("Height is: " + height); System.out.println("Width is: " +
-	 * width);
-	 */
+	// Slide
+	public WebElement slideAction(String type, String sliderLocator) throws InterruptedException {
+		type = type.toLowerCase();
+		Actions action = new Actions(driver);
+		if (type.equals("id")) {
+			WebElement element = driver.findElement(By.id(sliderLocator));
+			action.dragAndDropBy(element, 100, 0).perform();
+		} else if (type.equals("xpath")) {
+			WebElement element = driver.findElement(By.xpath(sliderLocator));
+			action.dragAndDropBy(element, 100, 0).perform();
+		}
+		return null;
+	}
 }
