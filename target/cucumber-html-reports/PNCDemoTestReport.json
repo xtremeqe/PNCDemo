@@ -1,0 +1,726 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "line": 24,
+        "name": "Testing Checking link through the drop down",
+        "description": "",
+        "id": "testing-the-features-on-personal-banking-page;testing-checking-link-through-the-drop-down",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 26059501450,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "PBTa The user is on personal home page",
+            "match": {
+              "location": "PersonBank.pbta_The_user_is_on_personal_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 899260022,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "PBTa BANKING is present on the menu",
+            "match": {
+              "location": "PersonBank.pbta_BANKING_is_present_on_the_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16891541619,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "PBTa cursor is placed on the BANKING menu and click on Checking link",
+            "match": {
+              "location": "PersonBank.pbta_cursor_is_placed_on_the_BANKING_menuand_click_on_Checking_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 757914104,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "PBTa the user lands on Personal Checking Accounts page",
+            "match": {
+              "location": "PersonBank.pbta_the_user_lands_on_Personal_Checking_Accounts_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 48705016,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "PBTa Find the Right Checking Account button is present",
+            "match": {
+              "location": "PersonBank.pbta_Find_the_Right_Checking_Account_button_is_present()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3056582966,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "PBTa the user click on Find Right Checking Account button",
+            "match": {
+              "location": "PersonBank.pbta_the_user_click_on_Find_Right_Checking_Account_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 144993091,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "PBTa the user lands on questionnaire page",
+            "match": {
+              "location": "PersonBank.pbta_the_user_lands_on_questionnaire_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50043432,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "PBTa First question is visible",
+            "match": {
+              "location": "PersonBank.pbta_First_question_is_visible()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "name": "Testing Savings link through the drop down",
+        "description": "",
+        "id": "testing-the-features-on-personal-banking-page;testing-savings-link-through-the-drop-down",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2264357070,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "PBTb The user is on personal home page",
+            "match": {
+              "location": "PersonBank.pbtb_The_user_is_on_personal_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 140830425,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "PBTb BANKING is present on the menu",
+            "match": {
+              "location": "PersonBank.pbtb_BANKING_is_present_on_the_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3308086293,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "PBTb cursor is placed on the BANKING menu and click on Savings link",
+            "match": {
+              "location": "PersonBank.pbtb_cursor_is_placed_on_the_BANKING_menu_and_click_on_Savings_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 163073142,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "PBTb the user lands on PNC savings page",
+            "match": {
+              "location": "PersonBank.pbtb_the_user_lands_on_PNC_savings_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18510640,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "PBTb Find the right savings account is present",
+            "match": {
+              "location": "PersonBank.pbtb_Find_the_right_savings_account_is_present()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 43,
+        "name": "Testing Credit Card link through the drop down",
+        "description": "",
+        "id": "testing-the-features-on-personal-banking-page;testing-credit-card-link-through-the-drop-down",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2008685945,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "PBTc The user is on personal home page",
+            "match": {
+              "location": "PersonBank.pbtc_The_user_is_on_personal_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29489480,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "PBTc BANKING is present on the menu",
+            "match": {
+              "location": "PersonBank.pbtc_BANKING_is_present_on_the_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11837340652,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "PBTc cursor is placed on the BANKING menu and click on on Credit Card link",
+            "match": {
+              "location": "PersonBank.pbtc_cursor_is_placed_on_the_BANKING_menu_and_click_on_on_Credit_Card_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 157183457,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "PBTc the user lands on Personal Credit Cards",
+            "match": {
+              "location": "PersonBank.pbtc_the_user_lands_on_Personal_Credit_Cards()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 46959803,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "PBTc the Compare Our Credit Cards link is present",
+            "match": {
+              "location": "PersonBank.pbtc_the_Compare_Our_Credit_Cards_link_is_present()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2078702525,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "PBTc the user click on Compare Credit Cards",
+            "match": {
+              "location": "PersonBank.pbtc_the_user_click_on_Compare_Credit_Cards()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 191240067,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "PBTc lands on Compare Credit Cards page",
+            "match": {
+              "location": "PersonBank.pbtc_lands_on_Compare_Credit_Cards_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 21563013,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "PHTc Apply for Get Cash Back card is present",
+            "match": {
+              "location": "PersonBank.phtb_Apply_for_Get_Cash_Back_card_is_present()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18571286,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "PHTc Apply for SAVE WITH LOWER RATES card is present",
+            "match": {
+              "location": "PersonBank.phtb_Apply_for_SAVE_WITH_LOWER_RATES_card_is_present()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11227490,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "PHTc Apply for EARN POINTS FOR REWARDS card is present",
+            "match": {
+              "location": "PersonBank.phtb_Apply_for_EARN_POINTS_FOR_REWARDS_card_is_present()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18988812,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "PHTc Apply for EARN MILES, PERKS, REWARDS card is present",
+            "match": {
+              "location": "PersonBank.phtb_Apply_for_EARN_MILES_PERKS_REWARDS_card_is_present()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag3"
+          }
+        ]
+      }
+    ],
+    "name": "Testing the features on Personal Banking page",
+    "description": "  These tests will verify the applications on the Personal Banking Page",
+    "id": "testing-the-features-on-personal-banking-page",
+    "keyword": "Feature",
+    "uri": "src/test/java/feature/personalBanking.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 20,
+    "elements": [
+      {
+        "line": 24,
+        "name": "Testing Checking link",
+        "description": "",
+        "id": "testing-the-features-on-personal-home-page;testing-checking-link",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1988891937,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "PHTa The user is on personal home page",
+            "match": {
+              "location": "PersonHome.phta_The_user_is_on_personal_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 198484030,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "PHTa checking link is present",
+            "match": {
+              "location": "PersonHome.phta_checking_link_is_present()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96706068,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "PHTa click on Checking link",
+            "match": {
+              "location": "PersonHome.phta_click_on_Checking_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1755313312,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "PHTa the user lands on Personal Checking Accounts page",
+            "match": {
+              "location": "PersonHome.phta_the_user_lands_on_Personal_Checking_Accounts_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 47234111,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "PHTa Find the Right Checking Account button is present",
+            "match": {
+              "location": "PersonHome.phta_Find_the_Right_Checking_Account_button_is_present()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 787741804,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "PHTa the user click on Right Checking Account button",
+            "match": {
+              "location": "PersonHome.phta_the_user_click_on_Right_Checking_Account_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 157820242,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "PHTa the user lands on questionnaire page",
+            "match": {
+              "location": "PersonHome.phta_the_user_lands_on_questionnaire_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 46972398,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "PHTa First question is visible",
+            "match": {
+              "location": "PersonHome.phta_First_question_is_visible()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "name": "Testing Credit Cards link",
+        "description": "",
+        "id": "testing-the-features-on-personal-home-page;testing-credit-cards-link",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1790229700,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "PHTb The user is on personal home page",
+            "match": {
+              "location": "PersonHome.phtb_The_user_is_on_personal_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 174238120,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "PHTb credit cards link is present",
+            "match": {
+              "location": "PersonHome.phtb_credit_cards_link_is_present()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 130830322,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "PHTb the user click on crdit cards link",
+            "match": {
+              "location": "PersonHome.phtb_the_user_click_on_crdit_cards_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1962239769,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "PHTb the user lands on Personal Credit Cards",
+            "match": {
+              "location": "PersonHome.phtb_the_user_lands_on_Personal_Credit_Cards()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 46192394,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "PHTb the Compare Our Credit Cards link is present",
+            "match": {
+              "location": "PersonHome.phtb_the_Compare_Our_Credit_Cards_link_is_present()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1521596135,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "PHTb the user click on Compare Credit Cards",
+            "match": {
+              "location": "PersonHome.phtb_the_user_click_on_Compare_Credit_Cards()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 213231802,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "PHTb lands on Compare Credit Cards page",
+            "match": {
+              "location": "PersonHome.phtb_lands_on_Compare_Credit_Cards_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18028268,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "PHTb Apply for Get Cash Back card is present",
+            "match": {
+              "location": "PersonHome.phtb_Apply_for_Get_Cash_Back_card_is_present()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19538360,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "PHTb Apply for SAVE WITH LOWER RATES card is present",
+            "match": {
+              "location": "PersonHome.phtb_Apply_for_SAVE_WITH_LOWER_RATES_card_is_present()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10679340,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "PHTb Apply for EARN POINTS FOR REWARDS card is present",
+            "match": {
+              "location": "PersonHome.phtb_Apply_for_EARN_POINTS_FOR_REWARDS_card_is_present()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17432536,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "PHTb Apply for EARN MILES, PERKS, REWARDS card is present",
+            "match": {
+              "location": "PersonHome.phtb_Apply_for_EARN_MILES_PERKS_REWARDS_card_is_present()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 49,
+        "name": "Testing Savings link",
+        "description": "",
+        "id": "testing-the-features-on-personal-home-page;testing-savings-link",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14609218792,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "PHTc The user is on personal home page",
+            "match": {
+              "location": "PersonHome.phtc_The_user_is_on_personal_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 143216156,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "PHTc Saving link is present",
+            "match": {
+              "location": "PersonHome.phtc_Saving_link_is_present()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 101577363,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "PHTc the user click on Savings link",
+            "match": {
+              "location": "PersonHome.phtc_the_user_click_on_Savings_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2636323474,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "PHTc the user lands on PNC savings page",
+            "match": {
+              "location": "PersonHome.phtc_the_user_lands_on_PNC_savings_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18853991,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "PHTc Find the right savings account is present",
+            "match": {
+              "location": "PersonHome.phtc_Find_the_right_savings_account_is_present()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag3"
+          }
+        ]
+      }
+    ],
+    "name": "Testing the features on Personal Home page",
+    "description": "  These tests will verify the applications on the Personal Home Page",
+    "id": "testing-the-features-on-personal-home-page",
+    "keyword": "Feature",
+    "uri": "src/test/java/feature/personalHome.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
