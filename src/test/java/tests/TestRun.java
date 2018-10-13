@@ -35,8 +35,8 @@ public class TestRun  {
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	ChromeOptions options = new ChromeOptions();
-	options.setBinary("/path/to/other/chrome/binary");
-		
+	System.setProperty("webdriver.chrome.driver", "/path/to/other/chrome/chromedriver.exe");
+                
 		
 		driver = new ChromeDriver();
 		baseURL = "https://www.pnc.com";
