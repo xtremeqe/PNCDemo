@@ -35,7 +35,7 @@ public class TestRun  {
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	
-	System.setProperty("webdriver.chrome.driver", "Users/dbmiadmin/eclipse-workspace/lib");
+// 	System.setProperty("webdriver.chrome.driver", "Users/dbmiadmin/eclipse-workspace/lib");
                 
 		
 		driver = new ChromeDriver();
