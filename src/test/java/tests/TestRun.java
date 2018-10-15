@@ -35,7 +35,7 @@ public class TestRun  {
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	ChromeOptions options = new ChromeOptions();
-	System.setProperty("webdriver.chrome.driver", "$JENKINS_HOME/tools/chromedriver/chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "JENKINS_HOME/tools/chromedriver/chromedriver.exe");
                 
 		
 		driver = new ChromeDriver();
