@@ -34,7 +34,7 @@ public class TestRun  {
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-	ChromeOptions options = new ChromeOptions();
+	
 	System.setProperty("webdriver.chrome.driver", "Users/dbmiadmin/eclipse-workspace/lib");
                 
 		
