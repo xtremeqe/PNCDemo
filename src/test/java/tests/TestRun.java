@@ -35,7 +35,7 @@ public class TestRun  {
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	
-	System.setProperty("webdriver.chrome.driver", "https://github.com/xtremeqe/PNCdemo/blob/master/chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "blob/master/chromedriver.exe");
                 
 		
 		driver = new ChromeDriver();
