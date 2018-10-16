@@ -33,10 +33,7 @@ public class TestRun  {
 	public static GenericMethods gm;
 	
 	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
-	
-	System.setProperty("webdriver.chrome.driver", "ws/chromedriver.exe");
-                
+	public static void setUpBeforeClass() throws Exception {                
 		
 		driver = new ChromeDriver();
 		baseURL = "https://www.pnc.com";
