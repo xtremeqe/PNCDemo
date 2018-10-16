@@ -1,13 +1,15 @@
 package tests;
 
 import java.util.concurrent.TimeUnit;
-
+import java.net.URL;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -34,6 +36,10 @@ public class TestRun  {
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {                
+		
+		DesiredCapabilities capability = DesiredCapabilities.chrome();
+		WebDriver driver = new RemoteWebDriver(new URL("http://18.207.165.143/jenkins"), capability);
+		
 		
 		driver = new ChromeDriver();
 		baseURL = "https://www.pnc.com";
