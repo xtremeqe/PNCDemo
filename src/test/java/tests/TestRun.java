@@ -8,6 +8,7 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 // import org.openqa.selenium.remote.DesiredCapabilities;
 // import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -40,8 +41,8 @@ public class TestRun  {
 // 		DesiredCapabilities capability = DesiredCapabilities.chrome();
 // 		WebDriver driver = new RemoteWebDriver(new URL("http://18.207.165.143/jenkins"), capability);
 		
-		
-		driver = new ChromeDriver();
+		driver = new FirefoxDriver();
+// 		driver = new ChromeDriver();
 		baseURL = "https://www.pnc.com";
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
